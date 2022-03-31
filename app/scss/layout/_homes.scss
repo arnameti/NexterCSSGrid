@@ -1,5 +1,41 @@
 .homes {
-  background-color: var(--clr-secondary);
   grid-column: center-start / center-end;
+  margin: 15rem 0;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-gap: 7rem;
+}
+
+.home {
+  background-color: var(--clr-grey-light-1);
+
+  &__img {
+
+  }
+
+  &__like {
+
+  }
+
+  &__name {
+
+  }
+
+  &__location,
+  &__rooms,
+  &__area,
+  &__place {
+
+    svg {
+      fill: var(--clr-primary);
+      height: 2rem;
+      width: 2rem;
+    }
+
+    p {
+
+    }
+  }
 }
 
