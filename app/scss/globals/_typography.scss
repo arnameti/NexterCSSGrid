@@ -15,12 +15,19 @@ body {
 
 .heading-2 {
   @extend %heading;
-
+  font-size: 4rem;
+  font-style: italic;
+  line-height: 1;
+  
+  &--light {color: var(--clr-grey-light-1);}
+  &--dark {color: var(--clr-grey-dark-1);}
 }
 
 .heading-3 {
   @extend %heading;
-
+  font-size: 1.6rem;
+  color: var(--clr-primary);
+  text-transform: uppercase;
 }
 
 .heading-4 {
