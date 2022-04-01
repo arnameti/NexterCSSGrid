@@ -13,4 +13,8 @@
       [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end])
       [center-end] minmax(5rem, 1fr) [full-end];
   }
+
+  @media only screen and (max-width: 800px) {
+    grid-template-rows: 6rem calc(100vh - 6rem);
+  }
 }

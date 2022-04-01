@@ -1,7 +1,11 @@
 .header {
   background-color: var(--clr-grey-dark-1);
   grid-column: full-start / col-end 6;
-  background-image: linear-gradient(rgba(16, 29, 44, .93), rgba(16, 29, 44, .93)), url(../img/hero.jpeg);
+  background-image: linear-gradient(
+      rgba(16, 29, 44, 0.93),
+      rgba(16, 29, 44, 0.93)
+    ),
+    url(../img/hero.jpeg);
   background-size: cover;
   background-position: center;
   padding: 8rem;
@@ -12,6 +16,14 @@
   grid-template-columns: minmax(min-content, max-content);
   grid-row-gap: 1.5rem;
   justify-content: center;
+
+  @media only screen and (max-width: 800px) {
+    grid-column: 1 / -1;
+  }
+
+  @media only screen and (max-width: 600px) {
+    padding: 5rem;
+  }
 
   &__logo {
     height: 3rem;
